@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #3d4050;
+}
+
+
+.topname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: fantasy;
+    background-color: #3d4050;
+}
+
+
+.footmargin{
+    margin-top: -50px;
+  }  

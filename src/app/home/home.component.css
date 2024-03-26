@@ -1,0 +1,86 @@
+.carousel-item {
+    height: 70vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .navbar {
+    z-index: 1000;
+  }
+
+  .bass {
+    height: 30vh;
+  }
+
+  .navbar {
+    background-color: #3d4050;
+  }
+  
+  .gotodiv:hover {
+    cursor: pointer;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .acc-color{
+    color: #898a8b;
+  }
+
+  img{
+    height: 700px;
+    object-fit: cover;
+  }
+
+body{
+  background-color: #3d4050;
+}
+
+.footmargin{
+  margin-top: -50px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footmargin{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .footmargin{
+    margin-top: 100px;
+  }
+}
+
+.minidiv:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(32, 89, 175);
+}
+
+.minidiv:hover::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 0.5rem;
+  animation: pulseBorder 1.5s infinite alternate;
+  border: 5px solid transparent;
+}
+
+@keyframes pulseBorder {
+  0% {
+    border-width: 5px;
+  }
+  100% {
+    border-width: 5px;
+  }
+}

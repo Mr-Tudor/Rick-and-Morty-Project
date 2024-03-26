@@ -1,0 +1,45 @@
+<div style="margin-top: 50px;"></div>
+
+<div class="maintop">
+    <div class="topname"><h1>C h a r a c t e r s</h1></div>
+
+        <div class="top">
+            <div class="topin top1">
+                <button [disabled]="info.prev == null" (click)="prevPage()" style="background-color: rgb(236, 123, 142); font-weight: 700;">previous</button>
+                <span style="font-size: 20px; font-weight: 600;">{{currentPage}}</span>
+                <button [disabled]="info.next == null" (click)="nextPage()" style="background-color: rgb(124, 231, 138); font-weight: 700;">next</button>
+            </div>
+            <div class="top2 topin">
+                <span style="font-weight: 700;">Search:</span>
+                <input type="text" class="form-control form-control-sm ml-3 w-75" placeholder="Character name" [(ngModel)]="characterName" (input)="filterCharacters()">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+
+</div>
+
+<div class="main" style="padding: 50px;">
+    <app-card *ngFor="let i of arr" [cardInfo]="i"></app-card>
+</div>
+
+
+<footer class="text-center text-white footmargin" style="background-color: #3d4050;">
+    <div class="container">
+      <hr class="my-5" />
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              This site project was made for Step Academy's last exam. It's my first full front-end project made using Angular 16. You can view the files on <a href="https://github.com/Mr-Tudor">my github profile.</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      2024 Rick and Morty Fanpage. <a href="https://github.com/Mr-Tudor" class="acc-color">Mr-Tudor</a>
+    </div>
+  </footer>

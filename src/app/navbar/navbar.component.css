@@ -1,0 +1,21 @@
+
+  
+
+  .bass {
+    height: 30vh;
+  }
+
+  .navbar {
+    background-color: #3d4050;
+  }
+  
+  .gotodiv:hover {
+    cursor: pointer;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .acc-color{
+    color: #898a8b;
+  }

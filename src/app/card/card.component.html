@@ -1,0 +1,31 @@
+<div class="card" [routerLink]="['/detail',cardInfo.name,cardInfo.status]">
+
+    <div class="imgdiv">
+        <img [src]="cardInfo.image" alt="">
+    </div>
+
+
+    <div class="infodiv">
+        <div class="general">
+            <h3>{{cardInfo.name}}</h3>
+            <span class="status-dot" [ngClass]="{'alive': cardInfo.status === 'Alive', 'dead': cardInfo.status === 'Dead', 'unknown': cardInfo.status === 'unknown'}"></span>
+            <span>{{cardInfo.status}} - </span>
+            <span>{{cardInfo.species}} - </span>
+            <span>{{cardInfo.gender}}</span>
+        </div>
+
+
+
+        <div class="dimension section">
+            <p>Dimension:</p>
+            <span>{{ cardInfo.dimension }}</span>
+          </div>
+
+
+          <div class="location section">
+            <p>Last known location:</p>
+            <span>{{ cardInfo.lastKnownLocation }}</span>
+          </div>          
+          
+    </div>
+</div>
